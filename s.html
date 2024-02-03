@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+ 
+h1 {
+    margin-top: 5rem;
+    text-align: center;
+}
+ 
+/* This class is defining the styling for a grid container. */
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+ 
+/* This class is defining the styling for the container element that holds each
+testimonial in a testimonial grid. */
+.testimonial-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ 
+/* This class is defining the styling for the avatar image */
+.testimonial-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+ 
+.testimonial-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+.testimonial-text {
+    margin-bottom: 20px;
+}
+ 
+.testimonial-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333333;
+}
+ 
+.testimonial-role {
+    font-size: 16px;
+    color: #666666;
+}
+ 
+/* This media query in CSS that targets screens with a maximum width of 600 pixels. */
+@media screen and (max-width: 600px) {
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+}
+        </style>
+    </head>
+<body>
+    <h1>Testimonial Example</h1>
+    <div class="testimonial-grid">
+ 
+<!-- Testimonial container... -->
+<!-- The `<div class="testimonial-container">` is a container element that holds 
+a testimonial. It includes two child elements: `<div class="testimonial-avatar">` 
+and `<div class="testimonial-text">`. -->
+        <div class="testimonial-container">
+            <div class="testimonial-avatar">
+                <img src=
+ "https://media.geeksforgeeks.org/wp-content/uploads/20230822183347/
+  man-portrait-businessman-male.jpg"
+                    alt="User Avatar">
+            </div>
+            <div class="testimonial-text">
+                <p class="testimonial-name">Michael Thompson</p>
+                <p class="testimonial-role">Marketing Manager, Axme Inc.</p>
+<p>"The results we've achieved using this platform's marketing services are exceptional. 
+        Our campaigns are more effective, and the team's insights are invaluable."</p>
+            </div>
+        </div>
+        <!-- Testimonial containers... -->
+        <div class="testimonial-container">
+            <div class="testimonial-avatar">
+                <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20230822183347/
+ man-portrait-businessman-male.jpg"
+                    alt="User Avatar">
+            </div>
+            <div class="testimonial-text">
+                <p class="testimonial-name">Chris Doe</p>
+                <p class="testimonial-role">CEO at XYZ</p>
+                <p>"A Computer Science graduate who likes to make things simpler.
+                    When he's not working, you can find him surfing the web,
+                    learning facts, tricks and life hacks. He also enjoys
+                    movies in his leisure time."</p>
+            </div>
+        </div>
+        <!-- Testimonial containers... -->
+        <div class="testimonial-container">
+            <div class="testimonial-avatar">
+                <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20230822183347/
+ man-portrait-businessman-male.jpg"
+                    alt="User Avatar">
+            </div>
+            <div class="testimonial-text">
+                <p class="testimonial-name">John Doe</p>
+                <p class="testimonial-role">CEO at ABC Company</p>
+<p>"The results we've achieved using this platform's marketing services are exceptional. 
+       Our campaigns are more effective, and the team's insights are invaluable."</p>
+            </div>
+        </div>
+    </div>
+</body>
+ 
+</html>
